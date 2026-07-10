@@ -26,3 +26,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="missi-user 15 AP3A.240905.015.A2 OS2.0.207.0.VOQMIXM release-keys" \
     BuildFingerprint=Redmi/citrine_global/citrine:14/SP1A.210812.016/OS2.0.207.0.VOQMIXM:user/release-keys
 
+#Mistify
+# Maintainer
+MISTOS_MAINTAINER := Aditya
+
+# Enable GMS
+WITH_GMS := true
+
+# Enable UI enhancements
+TARGET_ENABLE_BLUR := true
+
+# Enable features
+TARGET_SUPPORTS_QUICK_TAP := true
