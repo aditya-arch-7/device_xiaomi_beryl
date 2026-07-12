@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_beryl.mk
+    $(LOCAL_DIR)/matrixx_beryl.mk
+
+COMMON_LUNCH_CHOICES := \
+    matrixx_beryl-bp4a-userdebug \
+    matrixx_beryl-bp4a-user \
+    matrixx_beryl-bp4a-eng
