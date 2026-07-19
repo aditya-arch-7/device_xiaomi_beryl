@@ -350,6 +350,7 @@ include $(LOCAL_PATH)/vendor_logtag.mk
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/lineage/interfaces/power-libperfmgr \
+    hardware/lineage/compat \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
     hardware/xiaomi \
