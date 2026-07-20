@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from beryl device
 $(call inherit-product, device/xiaomi/beryl/device.mk)
@@ -26,10 +26,20 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="missi-user 15 AP3A.240905.015.A2 OS2.0.207.0.VOQMIXM release-keys" \
     BuildFingerprint=Redmi/citrine_global/citrine:14/SP1A.210812.016/OS2.0.207.0.VOQMIXM:user/release-keys
 
-#matrixx flags
-MATRIXX_MAINTAINER := Aditya
-TARGET_CUSTOM_UDFPS := true
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
+
+#Mistify
+# Set maintainer
+MISTOS_MAINTAINER := Aditya
+
+# Enable GMS
 WITH_GMS := true
-TARGET_INCLUDE_PIXEL_LAUNCHER := true
-WITH_GMS_COMMS_SUITE := true
-WITH_GMS_AICORE := true
+
+# Enable UI enhancements
+TARGET_ENABLE_BLUR := true
+
+# Enable features
+TARGET_SUPPORTS_QUICK_TAP := true
